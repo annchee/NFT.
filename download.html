@@ -6,123 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT./Download-Page</title>
 
-    <!-- Box icons link -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Box icons link -->
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Custom css file link -->
-    <link href="css/style.css" rel="stylesheet">
+     <!-- Custom css file link -->
+     <link href="css/style.css" rel="stylesheet">
+ 
+     <!-- Swiper css file link-->
+     <link href="css/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Swiper css file link-->
-    <link href="css/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Header start -->
-    <header>
-        <div class="nav nav-container">
 
-            <a href="index.html" class="logo">NFT <span>.</span></a>
-
+    <!-- Navigation part start -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><h2>NFT<span>.</span></h2></a>
+            
             <div class="nav-icons">
-
                 <i class='bx bx-bell bx-tada' id="bell-icon"><span></span></i>
                 <i class='bx bx-download' id="download-icon"></i>
-
                 <div class="menu-icon">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-
             </div>
 
-            <!-- Menu part -->
-            <div class="menu">
-
+            <!-- Menu side part -->
+            <div class="menu-side">
                 <img src="img/menu.png" alt="">
-
                 <div class="navbar">
-
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#trending">Trending</a></li>
                     <li><a href="#new">New NFT</a></li>
                     <li><a href="#top">Top Authors</a></li>
                     <li><a href="#review">Review</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-
+                    <li><a href="#info">Contact Us</a></li>
                 </div>
-
             </div>
 
-            <!-- Notification -->
+            <!-- Notification part -->
             <div class="notification">
-
                 <div class="notification-box">
                     <i class='bx bxs-check-circle'></i>
                     <p>Congratulation, Your successfully bought NFT!</p>
                 </div>
-
                 <div class="notification-box x-box">
                     <i class='bx bx-x-circle'></i>
                     <p>Sorry, could not apply change</p>
                 </div>
-
             </div>
 
         </div>
-    </header>
-    <!-- Header end -->
+    </nav>
+    <!-- Navigation part end -->
+    
+    <!-- Download detail section start -->
+    <section class="container detail-container">
+        <div class="detail-content">
+            <div class="detail-img">
+                <img src="img/download-home.jpg" alt="">
+            </div>
 
-    <!-- Image -->
-    <div class="download-title">
-        <img src="img/download-home.jpg" alt="">
-    </div>
+            <div class="detail-about ">
+                <h2>Ape Kids Club</h2>
+                <p>A non-fungible token is a unique and non-interchangeable unit of data stored on a blockchain, a form of digital ledger. 
+                    NFTs can be associated with reproducible digital files such as photos, videos, and audio.
+                    Ape Kids Club is a collection of 9,999 Kids Apes that were sprouted from our thousand year old magical tree. 
+                    Victorior, the beloved and talented art teacher, will take care of all Kid Apes in the our Club with many planned activities and suprises. 
+                    Please see roadmap section here.
+                </p>
+            </div>
 
-    <!-- About -->
-    <div class="about ">
-        <h2>Ape Kids Club</h2>
-        <p>A non-fungible token is a unique and non-interchangeable unit of data stored on a blockchain, a form of digital ledger. 
-            NFTs can be associated with reproducible digital files such as photos, videos, and audio.
-            Ape Kids Club is a collection of 9,999 Kids Apes that were sprouted from our thousand year old magical tree. 
-            Victorior, the beloved and talented art teacher, will take care of all Kid Apes in the our Club with many planned activities and suprises. 
-            Please see roadmap section here.
-        </p>
-    </div>
+            <div class="detail-screenshot ">
+                <h2>Screenshots</h2>
+                <div class="screenshot-content">
+        
+                    <img src="img/Ape Kids Club1.png" alt="">
+                    <img src="img/Ape Kids Club2.png" alt="">
+                    <img src="img/Ape Kids Club3.png" alt="">
+        
+                </div>
+            </div>
 
-    <!-- Screenshot -->
-    <div class="screenshot ">
-        <h2>Screenshots</h2>
-        <div class="screenshot-content">
-
-            <img src="img/Ape Kids Club1.png" alt="">
-            <img src="img/Ape Kids Club2.png" alt="">
-            <img src="img/Ape Kids Club3.png" alt="">
+            <div class="detail-download">
+                <h2>Download Links</h2>
+                <div class="download-links">
+                    <a href="#">For Android</a>
+                    <a href="#">For IOS</a>
+                    <a href="#">For Windows</a>
+                </div>
+            </div>
 
         </div>
-    </div>
+    </section>
+    <!-- Image detail section end -->
 
-    <!-- Download -->
-    <div class="download">
-        <h2>Download Links</h2>
-        <div class="download-links">
-            <a href="#">For Android</a>
-            <a href="#">For IOS</a>
-            <a href="#">For Windows</a>
+    <!-- Footer part start -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="input-box">
+                    <h3>Want to get notify and product updates from us?</h3>
+                </div>
+                <div class="email-input">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email here ..." name="email" class="form-control"id="subcribe" size="50">
+                            <button class="btn-subscribe" type="submit">Notify</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-center">
+                <div class="footer-1">
+                    <a href="index.html" class="footer-logo"><h4>nft<span>.</span></h4></a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque recusandae hic tempore ut, labore aspernatur.</p>
+                </div>
+
+                <div class="footer-2">
+                    <h4>need help ?</h4>
+                    <ul>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">News & Pres</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-2">
+                    <h4>privacy</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-2">
+                    <h4>follow us</h4>
+                    <ul class="footer-socials">
+                        <li>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                    </ul>
+                </div> 
+
+            </div>
         </div>
-    </div>
 
-    <!-- Footer end-->
-    <div class="copyright container">
-        <!-- <a href="#" class="logo">NFT<span>.</span></a> -->
-        <p>NFT<span>.</span>&#169;All Rights Reserved</p>
-    </div>
-    <!-- Footer end -->
+        <div class="footer-copyright">
+            <small>NFT<span>.</span> &#169; All Rights Reserved</small>
+        </div>
+    </footer>
+    <!-- Footer part end -->
 
     <!-- Custome js file link -->
     <script src="js/swiper-bundle.min.js"></script>
 
     <!-- Custome js file link -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
