@@ -33,7 +33,7 @@ html::-webkit-scrollbar {
 }
   
 html::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--light-color)
 }
   
 html::-webkit-scrollbar-thumb {
@@ -269,11 +269,11 @@ footer span{
     display: grid;
     row-gap: 1rem;
     text-align: right;
-    padding-right: 10rem;
+    padding-right: 15rem;
 }
 
 .navbar a{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: var(--white-color);
     transition: .2s;
@@ -359,8 +359,7 @@ footer span{
 }
 
 .home-content h1{
-    font-size: 4vw;
-    text-transform: uppercase;
+    font-size: 6vw;
     text-transform: uppercase;
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.7);
     line-height: 1.5;
@@ -420,16 +419,21 @@ footer span{
     background: hsl(251, 15%, 22%, .5);
     backdrop-filter: blur(.2rem);
     position: absolute;
-    padding: .6rem;
+    padding: .5rem;
     border-radius: .5rem;
     width: 100%;
     bottom: 0;
     letter-spacing: .1rem;
 }
 
+.trending-info h4{
+    font-weight: 500;
+}
+
 .trending-info h5,
 .new-info h5{
-    margin-top: .2rem;
+    margin-top: .5rem;
+    font-weight: 300;
 }
 
 .rating-download{
@@ -492,9 +496,13 @@ footer span{
     backdrop-filter: blur(.2rem);
     border-radius: .5rem;
     padding: .6rem;
-    bottom: 6.6rem;
+    bottom: 6.9rem;
     letter-spacing: .1rem;
     position: relative;
+}
+
+.new-info h4{
+    font-weight: 500;
 }
 
 .load-more{
@@ -508,8 +516,8 @@ footer span{
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
-    padding: .7rem 1.2rem;
-    letter-spacing: .5rem;
+    padding: .7rem 1.1rem .7rem 1.2rem;
+    letter-spacing: .3rem;
     cursor: pointer;
     display: inline-block;
 }
@@ -561,6 +569,7 @@ footer span{
 /********************* Review part ***************************/
 .review-container{
     padding-bottom: 3rem;
+    overflow-x: hidden;
 }
 
 .review-swiper{
@@ -619,7 +628,7 @@ footer span{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 5rem;
-    padding-top: 1rem;
+    margin-top: -5rem;
 }
 
 .info-box{
@@ -685,7 +694,7 @@ footer ul li a:hover{
     border-radius: .5rem;
     margin-bottom: 3rem;
     margin-top: -8rem;
-    max-width: 95%;
+    justify-content: cente;
 }
 
 .input-box h3{
@@ -704,7 +713,6 @@ form{
     box-sizing: border-box;
     width: 20rem;
     margin-top: 1rem;
-    margin-right: 2rem;
 }
 
 .email-input .form-group{
@@ -923,12 +931,26 @@ form{
         font-size: 1.1rem;
     }
 
+    .new-box{
+        max-height: 16rem;
+    }
+    .new-img img{
+        height: 16rem;
+    }
+
     .new-info{
-        bottom: 6.05rem;
+        padding: .6rem;
+        bottom: 6.5rem;
+        letter-spacing: .05rem;
     }
 
     .review-swiper{
         width: 40rem;
+    }
+
+    .review-content{
+        width: 18rem;
+        margin-left: 1rem;
     }
 
     .info-container{
@@ -943,7 +965,7 @@ form{
     }
 
     .footer-top{
-        width: 60%;
+        width: 80%;
         margin: -10rem auto 3rem;
     }
 
@@ -952,11 +974,20 @@ form{
     }
 
     .email-input{
-        margin: auto 3rem;
+        margin: auto;
+        width:30rem;
+    }
+
+    .email-input input{
+        width: 22rem;
     }
     
     .footer-center{
-        gap: 3rem;
+        gap: 2.5rem;
+    }
+
+    .footer-1 p{
+        width: 15rem;
     }
 
     .footer-1 p,
@@ -978,8 +1009,12 @@ form{
         display: none;
     }
 
+    .navbar{
+        padding-right: 5rem;
+    }
+
     .navbar a{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     
     .home-content h1{
@@ -989,6 +1024,28 @@ form{
     .btn{
         padding: 1rem 1.3rem;
         font-size: 1rem;
+    }
+
+    .new-content{
+        gap: .3rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .new-box{
+        max-height: 16rem;
+    }
+
+    .new-box:nth-child(3){
+        display: none;
+    }
+
+    .load-more{
+        margin-top: 1rem;
+    }
+    
+    .load-more .btn{
+        font-size: 1rem;
+        padding: .7rem 1rem;
     }
 
     .top-content{
@@ -1016,16 +1073,20 @@ form{
         margin-left: 0rem;
     }
 
+    .new-img img{
+        height: 15rem;
+    }
+
     .footer-top{
-        width: 85%;
+        text-align: center;
     }
 
     .email-input{
-        margin: auto 2rem;
+        margin: auto .8rem;
     }
 
     .email-input input{
-        width: 18rem;
+        width: 16rem;
     }
 
     .footer-center{
@@ -1098,15 +1159,15 @@ form{
     }
 
     .navbar a:hover{
-        border-bottom: .5rem solid var(--main-color);
+        border-bottom: .3rem solid var(--main-color);
     }
 
     .home-container{
         width: 100%;
     }
 
-    .home-content h1{
-        font-size: 6vw;
+     .new-info{
+        bottom: 6.3rem;
     }
 
     .top-content{
@@ -1133,14 +1194,6 @@ form{
         margin: 0 auto;
     }
 
-    .email-input{
-        margin: auto 1.5rem;
-    }
-
-    .email-input input{
-        width: 16rem;
-    }
-
     .detail-img{
         margin: 1rem auto;
         height: 15rem;
@@ -1161,28 +1214,159 @@ form{
 }
 
 @media screen and (max-width: 560px) {
+    h4{
+        font-size: 1.1rem;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
+    .notification{
+        right: 2rem;
+    }
+
+    .home-content h1{
+        font-size: 2rem;
+    }
+
+    header .swiper-button-next,
+    header .swiper-button-prev{
+        top: initial;
+        bottom: 1rem;
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+    }
+
     .heading h3{
         padding-top: .3rem;
     }
 
+    .heading .bx{
+        font-size: 1rem;
+    }
+
     .review-swiper{
-        width: 25rem;
+        width: 20rem;
     }
     
     .review-content{
-        width: 15rem;
-        margin: 0 auto 2.5rem;
+        width: 18rem;
     }
 
     .info-box{
         width: 28rem;
     }
 
+    .email-input{
+        margin: 0 .9rem;
+    }
+
     .email-input input{
-        width: 13rem;
+        width: 12rem;
+    }
+
+    .btn-subscribe{
+        font-size: .9rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+        padding: .3rem .6rem;
     }
 
     .detail-download{
         margin: 1rem auto 5rem;
     }
+
+    .new-info{
+        padding: .5rem;
+        bottom: 4.9rem;
+    }
+
+    .trending-info h4,
+    .new-info h4{
+        font-size: .9rem;
+    }
+
+    .trending-info h5,
+    .new-info h5{
+        font-size: .8rem;
+        margin-top: .3rem;
+    }
+
+    .box-btn .bx{
+        font-size: 1rem;
+        padding: .3rem;
+    }
+
+    .rating .bx,
+    .rating span{
+        font-size: .8rem;
+    }
+
+    
+    .load-more .btn{
+        padding: .7rem .9rem .7rem 1.1rem;
+    }
+
+    .info-box{
+        width: 19rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: .5rem
+    }
+
+    .info-img{
+        margin: auto 0;
+    }
+
+    .info-detail{
+        padding: 2rem .8rem 0 ;
+    }
+
+    .info-detail h3{
+        font-size: 1.2rem;
+    }
+    
+    .info-detail p{
+        font-size: .9rem;
+    }
+    
+    .info-detail a{
+        font-size: 1.2rem;
+    }
+
+    .input-box h3{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer-container > div h4{
+        font-size: 1.1rem;
+    }
+
+    .footer-1 p,
+    .footer-container > div a{
+        font-size: 1rem;
+    }
 }
+
+@media screen and (max-width: 360px) {
+    .btn{
+        padding: .5rem .8rem;
+        font-size: 1rem;
+    }
+
+    .info-container{
+        width: 20rem;
+    }
+
+    .email-input{
+        margin: 0 .5rem;
+    }
+
+    .email-input input{
+        width: 9.5rem;
+    }
+}
+
