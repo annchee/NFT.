@@ -91,8 +91,6 @@ var swiper = new Swiper(".trending-content", {
 let loadBtn = document.querySelector('.load-more .btn');
 var tempCurrentItem;
 
-console.log(window.innerWidth);
-
 if(window.innerWidth > 768){
   tempCurrentItem = 3;
 }else{
