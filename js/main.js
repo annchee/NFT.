@@ -86,20 +86,32 @@ var swiper = new Swiper(".trending-content", {
     }
 });
 
+
 /*    Load More Button Section   */
 let loadBtn = document.querySelector('.load-more .btn');
-let currentItem = 3;
+var tempCurrentItem;
+
+console.log(window.innerWidth);
+
+if(window.innerWidth > 768){
+  tempCurrentItem = 3;
+}else{
+  tempCurrentItem = 2;
+}
+
+let currentItem = tempCurrentItem;
 
 loadBtn.onclick = () =>{
     let boxes = [...document.querySelectorAll('.new-box')];
-    
-    for(var i = currentItem ; i < currentItem + 3 ; i ++){
+  
+    console.log(tempCurrentItem);
+    for(var i = currentItem ; i < currentItem + tempCurrentItem ; i ++){
       if(i < boxes.length){
         boxes[i].style.display = 'inline-block';
       }
     };
 
-    currentItem += 3;
+    currentItem += tempCurrentItem;
 
     if(currentItem >= boxes.length){
       loadBtn.style.display = 'none';
@@ -109,9 +121,9 @@ loadBtn.onclick = () =>{
 
 /*    Review Section   */
 var swiper2 = new Swiper(".review-swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 5,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     autoplay: {
@@ -125,14 +137,6 @@ var swiper2 = new Swiper(".review-swiper", {
     },
   
     breakpoints:{
-      360:{
-        slidesPerView : 1,
-        slidesPerGroup: 1,
-      },
-      560:{
-        slidesPerView : 1,
-        slidesPerGroup: 1,
-      },
       600:{
         slidesPerView : 2,
         slidesPerGroup: 2,
@@ -140,10 +144,6 @@ var swiper2 = new Swiper(".review-swiper", {
       768:{
         slidesPerView : 2,
         slidesPerGroup: 2,
-      },
-      991:{
-        slidesPerView : 3,
-        slidesPerGroup: 3,
       },
       1024:{
         slidesPerView : 3,
