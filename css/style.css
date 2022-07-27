@@ -1227,13 +1227,14 @@ form{
     }
 
     .home-content h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 
-    header .swiper-button-next,
-    header .swiper-button-prev{
+    .home-slider .swiper-button-next,
+    .home-slider .swiper-button-prev{
         top: initial;
-        bottom: 1rem;
+        bottom: 3rem;
         height: 3rem;
         width: 3rem;
         line-height: 3rem;
@@ -1276,6 +1277,10 @@ form{
 
     .detail-download{
         margin: 1rem auto 5rem;
+    }
+
+    .trending-info{
+        letter-spacing: .05rem;
     }
 
     .new-info{
@@ -1349,12 +1354,39 @@ form{
     .footer-container > div a{
         font-size: 1rem;
     }
+
+    .download-links{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 360px) {
     .btn{
         padding: .5rem .8rem;
         font-size: 1rem;
+    }
+
+    .home-content h1{
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        padding: 3rem auto;
+        line-height: 2;
+    }
+
+    .home-slider .swiper-button-next,
+    .home-slider .swiper-button-prev{
+        line-height: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .new-info{
+        padding: .4rem;
+        bottom: 4.7rem;
+    }
+
+    .review-content{
+        width: 15rem;
     }
 
     .info-container{
